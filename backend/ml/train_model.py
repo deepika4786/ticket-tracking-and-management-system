@@ -12,7 +12,12 @@ data = {
 "system not booting",
 "outlook crashing",
 "software installation issue",
-"need access to database"
+"need access to database",
+"printer not working",
+"email not sending",
+"vpn connection failed",
+"keyboard not working",
+"need system access"
 ],
 
 "label":[
@@ -23,10 +28,14 @@ data = {
 "hardware",
 "software",
 "software",
+"access",
+"hardware",
+"software",
+"network",
+"hardware",
 "access"
 ]
 }
-
 df = pd.DataFrame(data)
 
 vectorizer = TfidfVectorizer()
