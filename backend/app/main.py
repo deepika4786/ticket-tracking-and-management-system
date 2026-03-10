@@ -1,8 +1,10 @@
 from fastapi import FastAPI
-from app.database import db
+from app.routes import auth_routes
 
 app = FastAPI()
 
+app.include_router(auth_routes.router)
+
 @app.get("/")
 def home():
-    return {"message": "API running and MongoDB connected"}
+    return {"message": "Ticket Tracking API Running"}
