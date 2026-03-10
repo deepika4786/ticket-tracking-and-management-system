@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from app.routes import auth_routes
+from app.routes import ticket_routes
 
 app = FastAPI()
 
-app.include_router(auth_routes.router)
+app.include_router(ticket_routes.router)
 
 @app.get("/")
 def home():
